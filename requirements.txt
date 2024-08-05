@@ -1,0 +1,21 @@
+matplotlib==3.8.0
+mlflow==2.2.2
+numpy==2.0.1
+pandas==2.2.2
+scikit_learn==1.2.2
+seaborn==0.13.2
+
+""" steps to populate the requirements.txt file
+1. If requirements.txt does not exist in your directory, follow the steps below:
+    a. Install pipreqs using:
+    pip install pipreqs
+
+    b. Navigate to the root directory of your project and run:
+    pipreqs . (#or specify the path to your project directory instead of period, This will scan your project directory for imports and generate a requirements.txt file listing only those packages.)
+    
+
+2. If requirements.txt exists, but is empty or you wish to overwrite, run:
+    a. pipreqs . --force
+
+"""
+
