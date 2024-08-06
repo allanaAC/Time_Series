@@ -1,3 +1,4 @@
+import logging
 import warnings
 from sklearn.metrics import precision_score
 from src.data.load_dataset import load_and_preprocess_data, preprocess_data, load_yfinance_data
@@ -6,6 +7,16 @@ from src.visualization.visualize import plot_univariate, decompose_time_series, 
 from src.feature.build_features import create_features
 from src.model.train_model import fit_arima_model, fit_arimax_model, train_xgboost_model
 from src.model.predict_model import evaluate_model, evaluate_arimax_model, backtest
+
+# Configure logging to write to both file and console
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('app.log'),
+        logging.StreamHandler()
+    ]
+)
 
 
 if __name__ == "__main__":

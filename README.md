@@ -61,3 +61,5 @@ First authenticate your githib account and integrate with VS code. Click on the 
 4. git init
 5. git add .
 6. git commit -m "Your commit message"
+
+To run the program, go to terminal and type --> py main.py
